@@ -1,0 +1,7 @@
+.navbar-active {
+    background-color: #B9FF66;
+    color: #000;
+    display: inline-block; /* Background only covers text width */
+    padding: 4px 8px; /* Small padding for better appearance */
+    border-radius: 4px; /* Optional: Adds rounded corners */
+}

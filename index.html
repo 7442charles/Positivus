@@ -9,6 +9,9 @@
     <link rel="icon" type="image/png" href="Assets/images/favicon.png">
 
     <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="Assets/css/styles.css">
 </head>
 <body class="bg-white">
     <nav class="w-full bg-white shadow-md">
@@ -40,25 +43,19 @@
         </div>
     
         <!-- Mobile Menu -->
-        <div id="mobile-menu" class="hidden flex flex-col items-left space-y-4 px-4 pb-4 md:hidden">
-            <a href="about.html" class="text-black hover:text-gray-700">About</a>
-            <a href="services.html" class="text-black hover:text-gray-700">Services</a>
-            <a href="usecase.html" class="text-black hover:text-gray-700">Use Cases</a>
-            <a href="pricing.html" class="text-black hover:text-gray-700">Pricing</a>
-            <a href="blog.html" class="text-black hover:text-gray-700">Blog</a>
+        <div id="mobile-menu" class="hidden flex flex-col items-start space-y-4 px-4 pb-4 md:hidden">
+            <a href="index.html" class="text-black hover:text-gray-700 navbar-link navbar-active">Home</a>
+            <a href="about.html" class="text-black hover:text-gray-700  navbar-link">About</a>
+            <a href="services.html" class="text-black hover:text-gray-700 navbar-link">Services</a>
+            <a href="usecase.html" class="text-black hover:text-gray-700 navbar-link">Use Cases</a>
+            <a href="pricing.html" class="text-black hover:text-gray-700 navbar-link">Pricing</a>
+            <a href="blog.html" class="text-black hover:text-gray-700 navbar-link">Blog</a>
             <a href="#" class="border border-black rounded px-4 py-2 text-black text-center hover:bg-black hover:text-white transition">
                 Request A Quote
             </a>
         </div>
     </nav>
     
-    <script>
-        const menuBtn = document.getElementById("menu-btn");
-        const mobileMenu = document.getElementById("mobile-menu");
-
-        menuBtn.addEventListener("click", () => {
-            mobileMenu.classList.toggle("hidden");
-        });
-    </script>
+    <script src="Assets/js/navbar.js"></script>
 </body>
 </html>
