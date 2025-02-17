@@ -5,3 +5,11 @@
     padding: 4px 8px; /* Small padding for better appearance */
     border-radius: 4px; /* Optional: Adds rounded corners */
 }
+
+@keyframes marquee {
+    from { transform: translateX(100%); }
+    to { transform: translateX(-100%); }
+}
+.animate-marquee {
+    animation: marquee 10s linear infinite;
+}
